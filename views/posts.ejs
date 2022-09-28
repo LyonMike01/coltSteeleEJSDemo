@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+
+<h1>The Post Page</h1>
+
+<% for (var i = 0; i < posting.length; i++) {%>
+
+	<li> 
+		<%= posting[i].title %> - <strong><%= posting[i].author %></strong>
+
+	</li>
+
+<% } %>
+
+<p>*************************</p>
+<p>*************************</p>
+<p>*************************</p>
+
+<% posting.forEach(function (posts) { %>
+	
+	<li> 
+		<%= posts.title %> - <strong><%= posts.author %></strong>
+
+	</li>
+
+
+<% }); %>
+
+<%- include('partials/footer.ejs') %>

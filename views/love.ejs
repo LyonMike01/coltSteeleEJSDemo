@@ -1,0 +1,21 @@
+
+<%- include('partials/header.ejs') %>
+
+<h1> You fell in love with: <%= thingVar.toUpperCase() %> </h1>
+
+<% if (thingVar.toLowerCase() === "lyon") { %>
+
+ 	<p> You sabi better Person jare </p>
+
+<% } else if (thingVar.toLowerCase() === "chelsea") { %>
+
+ 	<p> You sabi better Club jorh, Who no like better thing sef? </p>
+
+<% } else {%>
+
+<p> Lyon dy there you no pick am, Chelsea dy ground you no carry them.... MTCHEWWWWWW</p>
+
+<% } %>
+
+<h2> you sabi love oh </h2>
+<%- include('partials/footer.ejs') %>
